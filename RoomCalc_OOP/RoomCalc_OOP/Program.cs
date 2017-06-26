@@ -24,13 +24,14 @@ namespace RoomCalc_OOP
                 // ensures that the user enters a valid number for both width and length
 
                 Console.WriteLine("Please enter the width of the room");
-                while (!double.TryParse(Console.ReadLine(), out width) && width > 0)
+                while (!double.TryParse(Console.ReadLine(), out width))
                 {
                     Console.WriteLine("Please enter the width in numerical format");
+             
                 }
 
                 Console.WriteLine("Please enter the length of the room");
-                while (!double.TryParse(Console.ReadLine(), out length) && length > 0)
+                while (!double.TryParse(Console.ReadLine(), out length))
                 {
                     Console.WriteLine("Please enter the length in numerical format");
                 }
