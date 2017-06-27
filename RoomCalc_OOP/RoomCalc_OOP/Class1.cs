@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RoomCalc_OOP
+﻿namespace RoomCalc_OOP
 {
     class Room
     {
         private double width;
-        public double length;
+        private double length;
 
         public Room(double w, double l)
         {

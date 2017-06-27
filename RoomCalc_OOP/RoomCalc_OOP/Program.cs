@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RoomCalc_OOP
 {
@@ -14,6 +10,7 @@ namespace RoomCalc_OOP
             // cont is initialized to y in order to make sure that the while loop runs
             // doubles are declared for width and length
             // an instance of Room class is declared
+
             string cont = "y";
             double width;
             double length;
@@ -25,17 +22,12 @@ namespace RoomCalc_OOP
 
                 Console.WriteLine("Please enter the width of the room");
                 while (!double.TryParse(Console.ReadLine(), out width))
-                {
                     Console.WriteLine("Please enter the width in numerical format");
-             
-                }
 
                 Console.WriteLine("Please enter the length of the room");
                 while (!double.TryParse(Console.ReadLine(), out length))
-                {
                     Console.WriteLine("Please enter the length in numerical format");
-                }
-
+                
                 // newRoom is initialized with the width and length
 
                 newRoom = new Room(width, length);
